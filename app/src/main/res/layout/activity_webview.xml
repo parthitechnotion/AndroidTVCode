@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/banner_background"
+    tools:context="com.googleandroidtv.startup_activity.WebviewActivity">
+    <WebView
+        android:id="@+id/mWebview"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/llbottom"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/llbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+           <!-- <Button
+                android:visibility="visible"
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/abc_dialog_list_padding_vertical_material"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"
+                android:background="@color/app_launch_ripple_default_color"
+                android:layout_height="wrap_content"
+                android:text="@string/back"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:background="@color/app_launch_ripple_default_color"
+                android:padding="@dimen/abc_dialog_list_padding_vertical_material"
+                android:text="@string/next"
+                android:textSize="30dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

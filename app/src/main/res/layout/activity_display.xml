@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banner_background">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llbottom"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lb_playback_icon_highlight_no_theme"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:padding="@dimen/banner_icon_to_text_spacing">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/screen_setting"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/press_button_below_to_change_the_screen"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btnNet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/banner_icon_to_text_spacing"
+                    android:background="@color/app_launch_ripple_default_color"
+                    android:gravity="center"
+                    android:padding="@dimen/abc_dialog_list_padding_vertical_material"
+                    android:text="@string/screen_setting"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/abc_dialog_list_padding_vertical_material"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"
+                android:background="@color/app_launch_ripple_default_color"
+                android:layout_height="wrap_content"
+                android:text="@string/back"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:background="@color/app_launch_ripple_default_color"
+                android:padding="@dimen/abc_dialog_list_padding_vertical_material"
+                android:text="@string/next"
+                android:textSize="30dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

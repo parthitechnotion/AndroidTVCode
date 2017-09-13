@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="press_button_below_to_change_the_language">Press button below to change the language</string>
+    <string name="back">Back</string>
+    <string name="internet_is_requiered">Internet is requiered</string>
+    <string name="press_button_below_to_enable_internet">Press button below to enable internet</string>
+    <string name="press_button_below_to_change_the_screen">Press button below to change the screen</string>
+    <string name="press_button_below_to_change_the_date_time">Press button below to change the date and time</string>
+    <string name="applications">Applications</string>
+</resources>

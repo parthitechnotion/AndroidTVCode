@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.googleandroidtv.apps.BannerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/banner_width"
+    android:layout_height="@dimen/banner_height"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@id/edit_focused_frame"
+        android:layout_width="@dimen/edit_frame_width"
+        android:layout_height="@dimen/edit_frame_height"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/edit_focused_frame"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/app_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/banner_background"
+        android:gravity="center"
+       >
+       <!-- android:paddingLeft="@dimen/banner_side_padding"
+        android:paddingRight="@dimen/banner_side_padding"-->
+
+        <ImageView
+            android:id="@id/banner_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_app_default"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+       <!-- android:layout_height="@dimen/banner_icon_size"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparent_black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@id/banner_label"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:fontFamily="@string/font"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="App"
+            android:textColor="@color/banner_label_text_color"
+            android:textSize="@dimen/banner_label_text_size_custom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/install_state_overlay" />
+</com.googleandroidtv.apps.BannerView>

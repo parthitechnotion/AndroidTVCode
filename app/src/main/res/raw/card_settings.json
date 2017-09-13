@@ -1,0 +1,30 @@
+{
+  "title": "ImageCardView with onFocusChange listener",
+  "shadow": false,
+  "cards": [
+    {
+      "id":"1",
+      "type": "ICON",
+      "title": "Settings",
+      "localImageResource": "ic_settings_settings"
+    },
+    {
+      "id":"2",
+      "type": "ICON",
+      "title": "WiFi",
+      "localImageResource": "ic_settings_wifi_3_bar"
+    },
+    {
+      "id":"3",
+      "type": "ICON",
+      "title": "Parental Control",
+      "localImageResource": "ic_settings_parental_control"
+    },
+    {
+      "id":"4",
+      "type": "ICON",
+      "title": "Time",
+      "localImageResource": "ic_settings_time"
+    }
+  ]
+}
